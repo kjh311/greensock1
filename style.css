@@ -39,11 +39,11 @@ body{
   left: 0;
   width: 200px;
   height: 50px;
-  top: 300px;
+  top: 350px;
   opacity: 0;
     display: block;
     overflow: hidden;
-
+  cursor: pointer;
 }
 
 .learn-more-background1{
@@ -53,11 +53,56 @@ body{
   left: 0;
   width: 800px;
   height: 46px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .learn-more-background1:hover{
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   left: -400px;
+}
+
+.learn-more-text1{
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  top: -12px;
+  left: 20px;
+}
+.learn-more-text2{
+  color: red;
+  position: absolute;
+  pointer-events: none;
+  top: -12px;
+  left: 520px;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.bar{
+  background-color: #8B0000;
+  width: 5px;
+  position: absolute;
+  opacity: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+#bar1{
+  height: 50px;
+  left: -550px;
+  top: 230px;
+}
+#bar2{
+  height: 30px;
+  left: -570px;
+  top: 250px;
+}
+#bar3{
+  height: 80px;
+  left: -590px;
+  top: 200px;
 }
 
