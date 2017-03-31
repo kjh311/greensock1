@@ -1,0 +1,63 @@
+body{
+  background-color: black;
+  text-align: center;
+  font-size: 16px;
+}
+#bird{
+  /*width: 100px;*/
+  left: 0px;
+  /*position: absolute;*/
+}
+.border{
+  border: 2px dotted red;
+}
+#upper-box{
+  height: 300px;
+}
+#box{
+  /*position: a;*/
+  height: 200px;
+  /*height: 200px;*/
+  /*margin-top: 300px;*/
+}
+#animation{
+  color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  top: 200px;
+  font-size: 4em;
+}
+.learn-more{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 50px;
+  top: 300px;
+  opacity: 0;
+    display: block;
+    overflow: hidden;
+
+}
+
+.learn-more-background1{
+  background: -webkit-linear-gradient(left, red, red, red, white, white, white, white);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: 46px;
+  transition: all 0.5s ease-in-out;
+}
+
+.learn-more-background1:hover{
+  transition: all 0.5s ease-in-out;
+  left: -400px;
+}
+
