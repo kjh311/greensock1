@@ -168,7 +168,7 @@ $(".white-circle").click(function(){
     var whiteLink4 = $('.white-link4');
   TweenLite.to(whiteLink4, 0.5, {left:110, opacity:1, ease:Power2.easeOut, delay:1.1});
 
-$('.white-link').css({pointerEvents: "auto"});
+$('.white-link-div').css({pointerEvents: "auto"});
 }); 
 
 $(".black-circle").click(function(){
@@ -195,49 +195,98 @@ $(".black-circle").click(function(){
     var whiteLink4 = $('.white-link4');
   TweenLite.to(whiteLink4, 1, {left:60, opacity:0, ease:Power2.easeOut, delay:0});
 
-  $('.white-link').css({pointerEvents: "none"});
+  $('.white-link-div').css({pointerEvents: "none"});
 }); 
 
 
 // WHITE LINKS TEXT
-$(".white-link1").mouseover(function() {
+$(".white-link-div1").mouseover(function() {
   var lorem1 = $('.lorem1');
   TweenLite.to(lorem1, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var redLink1 = $('.red-link1');
+  TweenLite.to(redLink1, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
+
+  var whiteLink1 = $('.white-link1');
+  TweenLite.to(whiteLink1, 0.5, {top:30, opacity:0, rotationX:90, ease:Power2.easeOut});
+
 });
 
-$(".white-link1").mouseleave(function() {
+$(".white-link-div1").mouseleave(function() {
   var lorem1 = $('.lorem1');
   TweenLite.to(lorem1, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+
+  var redLink1 = $('.red-link1');
+  TweenLite.to(redLink1, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
+
+  var whiteLink1 = $('.white-link1');
+  TweenLite.to(whiteLink1, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
 });
 
-$(".white-link2").mouseover(function() {
+$(".white-link-div2").mouseover(function() {
   var lorem2 = $('.lorem2');
   TweenLite.to(lorem2, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var redLink2 = $('.red-link2');
+  TweenLite.to(redLink2, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
+
+  var whiteLink2 = $('.white-link2');
+  TweenLite.to(whiteLink2, 0.5, {top:30, opacity:0, rotationX:90, ease:Power2.easeOut});
 });
 
-$(".white-link2").mouseleave(function() {
+$(".white-link-div2").mouseleave(function() {
   var lorem2 = $('.lorem2');
   TweenLite.to(lorem2, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+
+  var redLink2 = $('.red-link2');
+  TweenLite.to(redLink2, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
+
+  var whiteLink2 = $('.white-link2');
+  TweenLite.to(whiteLink2, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
 });
 
-$(".white-link3").mouseover(function() {
+$(".white-link-div3").mouseover(function() {
   var lorem3 = $('.lorem3');
   TweenLite.to(lorem3, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var redLink3 = $('.red-link3');
+  TweenLite.to(redLink3, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
+
+  var whiteLink3 = $('.white-link3');
+  TweenLite.to(whiteLink3, 0.5, {top:30, opacity:0, rotationX:90, ease:Power2.easeOut});
 });
 
-$(".white-link3").mouseleave(function() {
+$(".white-link-div3").mouseleave(function() {
   var lorem3 = $('.lorem3');
   TweenLite.to(lorem3, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+
+  var redLink3 = $('.red-link3');
+  TweenLite.to(redLink3, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
+
+  var whiteLink3 = $('.white-link3');
+  TweenLite.to(whiteLink3, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
 });
 
-$(".white-link4").mouseover(function() {
+$(".white-link-div4").mouseover(function() {
   var lorem4 = $('.lorem4');
   TweenLite.to(lorem4, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var redLink4 = $('.red-link4');
+  TweenLite.to(redLink4, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
+
+  var whiteLink4 = $('.white-link4');
+  TweenLite.to(whiteLink4, 0.5, {top:30, opacity:0, rotationX:90, ease:Power2.easeOut});
 });
 
-$(".white-link4").mouseleave(function() {
+$(".white-link-div4").mouseleave(function() {
   var lorem4 = $('.lorem4');
   TweenLite.to(lorem4, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+
+  var redLink4 = $('.red-link4');
+  TweenLite.to(redLink4, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
+
+  var whiteLink4 = $('.white-link4');
+  TweenLite.to(whiteLink4, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
 });
 
 

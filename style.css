@@ -390,7 +390,7 @@ body{
   position: absolute;
   /*border: 2px solid red;*/
   padding: 10px;
-  pointer-events: none;
+  
   /*display: none;*/
 }
 .white-links{
@@ -402,23 +402,23 @@ body{
   /*left: 100px;*/
 }
 .white-link1{
-  left: 0px;
-  top: 100px;
+  /*left: 0px;*/
+  top: 0px;
   opacity: 0;
 }
 .white-link2{
-  left:20px;
-  top: 220px;
+  /*left:20px;*/
+  top: 0px;
   opacity: 0;
 }
 .white-link3{
-  left:40px;
-  top: 340px;
+  /*left:40px;*/
+  top: 0px;
   opacity: 0;
 }
 .white-link4{
-  left: 60px;
-  top: 460px;
+  /*left: 60px;*/
+  top: 0px;
   opacity: 0;
 }
 
@@ -450,3 +450,72 @@ body{
   right: 0px;
   opacity: 0;
 }
+
+.red-link{
+  color: red;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  /*border: 2px solid red;*/
+  padding: 10px;
+  pointer-events: none;
+}
+.red-link1{
+  left: 50px;
+  top: -30px;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+.red-link2{
+  left:70px;
+  top: -30px;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+.red-link3{
+  left:90px;
+  top: -30px;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+.red-link4{
+  left: 110px;
+  top: -30px;
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+.white-link-div{
+  cursor: pointer;
+  pointer-events: none;
+  /*border: 2px solid red;*/
+  position: absolute;
+  width: 700px;
+  height: 100px;
+}
+.white-link-div1{
+  top: 100px;
+  pointer-events: none;
+  /*left: 50px;*/
+}
+.white-link-div2{
+  top: 220px;
+  pointer-events: none;
+  /*left: 70px;*/
+}
+.white-link-div3{
+  top: 360px;
+  pointer-events: none;
+  /*left: 90px;*/
+}
+.white-link-div4{
+  top: 480px;
+  pointer-events: none;
+  /*left: 110px;*/
+}
+
+
+
