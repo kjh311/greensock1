@@ -7,6 +7,15 @@ TweenLite.to(animation, 1.5, {opacity:1, top:100, ease:Power2.easeOut, delay:0.4
 var learnMore = $('.learn-more');
 TweenLite.to(learnMore, 1.5, {opacity:1, top:230, ease:Power2.easeOut, delay:0.7});
 
+var whiteCircle = $('.white-circle');
+TweenLite.to(whiteCircle, 1.5, {opacity:1, right:50, ease:Power2.easeOut, delay:1.8});
+
+var blackCircle = $('.black-circle');
+TweenLite.to(blackCircle, 1.5, {opacity:1, right:50, ease:Power2.easeOut, delay:1.8});
+
+var expandingCircle = $('.expanding-circle');
+TweenLite.to(expandingCircle, 1.5, {opacity:1, right:50, ease:Power2.easeOut, delay:1.8});
+
 
 $(".learn-more-background1").mouseover(function() {
   $( ".learn-more-text1" ).css({}).animate({'left' : '-200px'}, 300);  
@@ -35,6 +44,33 @@ TweenLite.to(bar3, 2.5, { opacity:1, ease:Power2.easeOut, delay:1.3});
 var tl2 = new TimelineMax();
 tl2.to(bar3, 2.2, {height:70, top:210, repeat:-1, yoyo:true, delay:1.1})
 tl2.play();
+
+$(".white-circle").click(function(){
+    $( ".expanding-circle" ).animate({  
+   width: "10000px",  
+   height: "10000px",  
+   right: "-1000px",
+   top: "-5000px" 
+    }, 2000 );  
+
+      $('.white-circle').fadeOut(500);
+      $('.fa-times').fadeTo(500, 1);
+      $('.black-circle').fadeTo(1000, 1);
+
+}); 
+
+$(".black-circle").click(function(){
+    $( ".expanding-circle" ).animate({  
+   width: "75px",  
+   height: "75px",  
+   right: "50px",
+   top: "50px" 
+    }, 1000 );  
+
+      $('.black-circle').fadeTo(1000, 0);
+      $('.fa-times').fadeTo(1000, 0);
+      $('.white-circle').fadeTo(1000, 1);
+}); 
 
 
 });

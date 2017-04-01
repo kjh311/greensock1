@@ -11,6 +11,9 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
 
+<!-- FONT AWESOME -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,8 +21,18 @@
 <div class="container">
   <div class="row">
 
-      <div class="col-xs-12">
-        <h1 id="animation">Animation Demo</h1>
+    <h1 id="animation">Animation Demo</h1>
+
+    <div class="expanding-circle"></div>
+
+    <div class="white-circle">
+      <div  class="menu-bar menu1"></div>
+      <div  class="menu-bar menu2"></div>
+      <div  class="menu-bar menu3"></div>
+    </div>
+
+    <div class="black-circle">
+      <i class="fa fa-times  fa-2x" aria-hidden="true"></i>
     </div>
 
 
@@ -51,5 +64,6 @@
   <!-- GREEN SOCK ANIMATION. TWEENMAX -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> 
   <script src="script.js"></script>
+  <script src="jqueryRotate.js"></script>
 </body>
 </html>
