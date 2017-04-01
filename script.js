@@ -108,22 +108,22 @@ $(".bar-div").mouseleave(function() {
   $(".blue-circle").fadeTo(700, 0);
   
   var barText1 = $('.bar-text1');
-  TweenLite.to(barText1, 0.5, {top:210, opacity:0, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText1, 0.5, {top:210, opacity:0, ease:Power2.easeOut, delay:0.1});
 
   var barText1Div = $('.bar-text1-div');
-  TweenLite.to(barText1Div, 0.5, {left:-840, opacity:0, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText1Div, 0.5, {left:-840, opacity:0, ease:Power2.easeOut, delay:0.1});
 
   var barText2 = $('.bar-text2');
-  TweenLite.to(barText2, 0.5, {left:-850, opacity:0, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText2, 0.5, {left:-850, opacity:0, ease:Power2.easeOut, delay:0.1});
 
   var barText2Div = $('.bar-text2-div');
-  TweenLite.to(barText2Div, 0.5, {top:340, opacity:0, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText2Div, 0.5, {top:340, opacity:0, ease:Power2.easeOut, delay:0.1});
 
   var barText3 = $('.bar-text3');
-  TweenLite.to(barText3, 0.5, {left:-255, opacity:0, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText3, 0.5, {left:-255, opacity:0, ease:Power2.easeOut, delay:0.1});
 
   var barText3Div = $('.bar-text3-div');
-  TweenLite.to(barText3Div, 0.5, {top:320, opacity:0, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText3Div, 0.5, {top:320, opacity:0, ease:Power2.easeOut, delay:0.1});
 }); 
 
 $(".learn-more").mouseover(function() {
@@ -140,7 +140,10 @@ $(".learn-more").mouseleave(function() {
 }); 
 
 $(".white-circle").click(function(){
-    $( ".expanding-circle" ).animate({  
+
+
+
+  $( ".expanding-circle" ).animate({  
    width: "10000px",  
    height: "10000px",  
    right: "-1000px",
@@ -151,6 +154,21 @@ $(".white-circle").click(function(){
       $('.fa-times').fadeTo(500, 1);
       $('.black-circle').fadeTo(1000, 1);
 
+
+
+  var whiteLink1 = $('.white-link1');
+  TweenLite.to(whiteLink1, 0.5, {left:50, opacity:1, ease:Power2.easeOut, delay:0.5});
+
+    var whiteLink2 = $('.white-link2');
+  TweenLite.to(whiteLink2, 0.5, {left:70, opacity:1, ease:Power2.easeOut, delay:0.7});
+
+    var whiteLink3 = $('.white-link3');
+  TweenLite.to(whiteLink3, 0.5, {left:90, opacity:1, ease:Power2.easeOut, delay:0.9});
+
+    var whiteLink4 = $('.white-link4');
+  TweenLite.to(whiteLink4, 0.5, {left:110, opacity:1, ease:Power2.easeOut, delay:1.1});
+
+$('.white-link').css({pointerEvents: "auto"});
 }); 
 
 $(".black-circle").click(function(){
@@ -164,7 +182,63 @@ $(".black-circle").click(function(){
       $('.black-circle').fadeTo(1000, 0);
       $('.fa-times').fadeTo(1000, 0);
       $('.white-circle').fadeTo(1000, 1);
+
+        var whiteLink1 = $('.white-link1');
+  TweenLite.to(whiteLink1, 1, {left:0, opacity:0, ease:Power2.easeOut, delay:0});
+
+    var whiteLink2 = $('.white-link2');
+  TweenLite.to(whiteLink2, 1, {left:20, opacity:0, ease:Power2.easeOut, delay:0});
+
+    var whiteLink3 = $('.white-link3');
+  TweenLite.to(whiteLink3, 1, {left:40, opacity:0, ease:Power2.easeOut, delay:0});
+
+    var whiteLink4 = $('.white-link4');
+  TweenLite.to(whiteLink4, 1, {left:60, opacity:0, ease:Power2.easeOut, delay:0});
+
+  $('.white-link').css({pointerEvents: "none"});
 }); 
+
+
+// WHITE LINKS TEXT
+$(".white-link1").mouseover(function() {
+  var lorem1 = $('.lorem1');
+  TweenLite.to(lorem1, 1, {right:50, opacity:1, ease:Power2.easeOut});
+});
+
+$(".white-link1").mouseleave(function() {
+  var lorem1 = $('.lorem1');
+  TweenLite.to(lorem1, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+});
+
+$(".white-link2").mouseover(function() {
+  var lorem2 = $('.lorem2');
+  TweenLite.to(lorem2, 1, {right:50, opacity:1, ease:Power2.easeOut});
+});
+
+$(".white-link2").mouseleave(function() {
+  var lorem2 = $('.lorem2');
+  TweenLite.to(lorem2, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+});
+
+$(".white-link3").mouseover(function() {
+  var lorem3 = $('.lorem3');
+  TweenLite.to(lorem3, 1, {right:50, opacity:1, ease:Power2.easeOut});
+});
+
+$(".white-link3").mouseleave(function() {
+  var lorem3 = $('.lorem3');
+  TweenLite.to(lorem3, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+});
+
+$(".white-link4").mouseover(function() {
+  var lorem4 = $('.lorem4');
+  TweenLite.to(lorem4, 1, {right:50, opacity:1, ease:Power2.easeOut});
+});
+
+$(".white-link4").mouseleave(function() {
+  var lorem4 = $('.lorem4');
+  TweenLite.to(lorem4, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+});
 
 
 });
