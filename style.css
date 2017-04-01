@@ -91,7 +91,16 @@ body{
   margin-right: auto;
   left: 0;
   right: 0;
-
+}
+.bar-info{
+  /*background-color: #8B0000;*/
+  /*width: 5px;*/
+  position: absolute;
+  /*opacity: 0;*/
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 #bar1{
   height: 50px;
@@ -264,11 +273,11 @@ body{
 }
 
 .bar-text1{
-  color: #3333ff;
+  color: red;
   font-size: 0.7em;
   position: absolute;
   top: 210px;
-  left: 170px;
+  left: -880px;
   opacity: 0;
 }
 .bar-text1-div{
@@ -276,7 +285,45 @@ body{
   border-bottom: 2px solid #3333ff;
   position: absolute;
   top: 260px;
-  left: 130px;
+  left: -840px;
+  opacity: 0;
+}
+
+.bar-text2{
+  color: red;
+  font-size: 0.7em;
+  position: absolute;
+  top: 370px;
+  left: -850px;
+  opacity: 0;
+}
+.bar-text2-div{
+  height:100px;
+  width: 60px;
+  border-right: 2px solid #3333ff;
+  border-bottom: 2px solid #3333ff;
+  position: absolute;
+  top: 340px;
+  left: -630px;
+  opacity: 0;
+}
+
+.bar-text3{
+  color: red;
+  font-size: 0.7em;
+  position: absolute;
+  top: 355px;
+  left: -255px;
+  opacity: 0;
+}
+.bar-text3-div{
+  height:100px;
+  width: 40px;
+  border-right: 2px solid #3333ff;
+  border-top: 2px solid #3333ff;
+  position: absolute;
+  top: 320px;
+  left: -487px;
   opacity: 0;
 }
 

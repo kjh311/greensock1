@@ -54,12 +54,26 @@ var tl2 = new TimelineMax();
 tl2.to(bar3, 2.2, {height:70, top:210, repeat:-1, yoyo:true, delay:1.1, ease: Power0.easeOut})
 tl2.play();
 
+
+// BAR GRAPH ANIMATION
 $(".bar-div").mouseover(function() {
   var barText1 = $('.bar-text1');
-  TweenLite.to(barText1, 1.2, {top:240, opacity:0.7, ease:Power2.easeOut, delay:0.3});
+  TweenLite.to(barText1, 1.2, {top:240, opacity:0.7, ease:Power2.easeOut, delay:0.5});
 
   var barText1Div = $('.bar-text1-div');
-  TweenLite.to(barText1Div, 1, {left:170, opacity:0.7, ease:Power2.easeOut, delay:0.5});
+  TweenLite.to(barText1Div, 1, {left:-770, opacity:0.7, ease:Power2.easeOut, delay:0.5});
+
+  var barText2 = $('.bar-text2');
+  TweenLite.to(barText2, 1.2, {left:-690, opacity:0.7, ease:Power2.easeOut, delay:0.8});
+
+  var barText2Div = $('.bar-text2-div');
+  TweenLite.to(barText2Div, 1, {top:290, opacity:0.7, ease:Power2.easeOut, delay:0.8});
+
+  var barText3 = $('.bar-text3');
+  TweenLite.to(barText3, 1.2, {left:-365, opacity:0.7, ease:Power2.easeOut, delay:1.2});
+
+  var barText3Div = $('.bar-text3-div');
+  TweenLite.to(barText3Div, 1.1, {top:270, opacity:0.7, ease:Power2.easeOut, delay:1.2});
 
   $(".blue-circle").fadeTo(700, 0.4);
 }); 
@@ -68,12 +82,28 @@ $(".bar-div").mouseleave(function() {
   $(".blue-circle").fadeTo(700, 0);
   $(".bar-text1").fadeTo(500, 0);
   $(".bar-text1-div").fadeTo(500, 0);
+  $(".bar-text2").fadeTo(500, 0);
+  $(".bar-text2-div").fadeTo(500, 0);
+  $(".bar-text3").fadeTo(500, 0);
+  $(".bar-text3-div").fadeTo(500, 0);
   
   var barText1 = $('.bar-text1');
-  TweenLite.to(barText1, 0.5, {top:210, ease:Power2.easeOut, delay:1});
+  TweenLite.to(barText1, 0.5, {top:210, ease:Power2.easeOut, delay:0.5});
 
   var barText1Div = $('.bar-text1-div');
-  TweenLite.to(barText1Div, 0.5, {left:130, ease:Power2.easeOut, delay:1});
+  TweenLite.to(barText1Div, 0.5, {left:-840, ease:Power2.easeOut, delay:0.5});
+
+  var barText2 = $('.bar-text2');
+  TweenLite.to(barText2, 0.5, {left:-850, ease:Power2.easeOut, delay:0.5});
+
+  var barText2Div = $('.bar-text2-div');
+  TweenLite.to(barText2Div, 0.5, {top:340, ease:Power2.easeOut, delay:0.5});
+
+  var barText3 = $('.bar-text3');
+  TweenLite.to(barText3, 0.5, {left:-255, ease:Power2.easeOut, delay:0.5});
+
+  var barText3Div = $('.bar-text3-div');
+  TweenLite.to(barText3Div, 0.5, {top:320, ease:Power2.easeOut, delay:0.5});
 }); 
 
 $(".learn-more").mouseover(function() {
