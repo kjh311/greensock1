@@ -16,6 +16,15 @@ TweenLite.to(blackCircle, 1.5, {opacity:1, right:50, ease:Power2.easeOut, delay:
 var expandingCircle = $('.expanding-circle');
 TweenLite.to(expandingCircle, 1.5, {opacity:1, right:50, ease:Power2.easeOut, delay:1.8});
 
+var footerText = $('.footer-text');
+TweenLite.to(footerText, 1.5, {opacity:1, ease:Power2.easeOut, delay:2.2});
+
+// var blueCircle = $('.blue-circle');
+// // TweenLite.to(blueCircle, 4, {rotation:360, transformOrigin:"center"});
+// var t56 = new TimelineMax();
+// // t56.to(blueCircle, 2, {height:100, top:180, repeat:-1, yoyo:true})
+// t56.to(blueCircle, 2, {rotation:360, repeat:-1, transformOrigin:"center", ease:"Power0.easeNone"});
+// t56.play();
 
 $(".learn-more-background1").mouseover(function() {
   $( ".learn-more-text1" ).css({}).animate({'left' : '-200px'}, 300);  
@@ -44,6 +53,22 @@ TweenLite.to(bar3, 2.5, { opacity:1, ease:Power2.easeOut, delay:1.3});
 var tl2 = new TimelineMax();
 tl2.to(bar3, 2.2, {height:70, top:210, repeat:-1, yoyo:true, delay:1.1})
 tl2.play();
+
+$(".blue-circle").mouseover(function() {
+  $(".blue-circle").fadeTo(700, 0.4);
+}); 
+
+$(".blue-circle").mouseleave(function() {
+  $(".blue-circle").fadeTo(700, 0);
+}); 
+
+$(".learn-more").mouseover(function() {
+  $(".lorem").fadeTo(700, 1);
+}); 
+
+$(".learn-more").mouseleave(function() {
+  $(".lorem").fadeTo(700, 0);
+}); 
 
 $(".white-circle").click(function(){
     $( ".expanding-circle" ).animate({  
