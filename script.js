@@ -51,15 +51,29 @@ tl2.play();
 var bar3 = document.getElementById("bar3");
 TweenLite.to(bar3, 2.5, { opacity:1, ease:Power2.easeOut, delay:1.3});
 var tl2 = new TimelineMax();
-tl2.to(bar3, 2.2, {height:70, top:210, repeat:-1, yoyo:true, delay:1.1})
+tl2.to(bar3, 2.2, {height:70, top:210, repeat:-1, yoyo:true, delay:1.1, ease: Power0.easeOut})
 tl2.play();
 
-$(".blue-circle").mouseover(function() {
+$(".bar-div").mouseover(function() {
+  var barText1 = $('.bar-text1');
+  TweenLite.to(barText1, 1.2, {top:240, opacity:0.7, ease:Power2.easeOut, delay:0.3});
+
+  var barText1Div = $('.bar-text1-div');
+  TweenLite.to(barText1Div, 1, {left:170, opacity:0.7, ease:Power2.easeOut, delay:0.5});
+
   $(".blue-circle").fadeTo(700, 0.4);
 }); 
 
-$(".blue-circle").mouseleave(function() {
+$(".bar-div").mouseleave(function() {
   $(".blue-circle").fadeTo(700, 0);
+  $(".bar-text1").fadeTo(500, 0);
+  $(".bar-text1-div").fadeTo(500, 0);
+  
+  var barText1 = $('.bar-text1');
+  TweenLite.to(barText1, 0.5, {top:210, ease:Power2.easeOut, delay:1});
+
+  var barText1Div = $('.bar-text1-div');
+  TweenLite.to(barText1Div, 0.5, {left:130, ease:Power2.easeOut, delay:1});
 }); 
 
 $(".learn-more").mouseover(function() {

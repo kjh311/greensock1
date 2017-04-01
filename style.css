@@ -224,9 +224,12 @@ body{
 
 .bar-div{
   width: 200px;
-  position: absolute;
+  position: relative;
   height: 200px;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
+  top: 130px;
+  left: 200px;
+  z-index: 3;
 }
 
 @keyframes spin {
@@ -258,5 +261,22 @@ body{
 
 
 
+}
+
+.bar-text1{
+  color: #3333ff;
+  font-size: 0.7em;
+  position: absolute;
+  top: 210px;
+  left: 170px;
+  opacity: 0;
+}
+.bar-text1-div{
+  width: 150px;
+  border-bottom: 2px solid #3333ff;
+  position: absolute;
+  top: 260px;
+  left: 130px;
+  opacity: 0;
 }
 
