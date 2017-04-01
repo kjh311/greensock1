@@ -3,6 +3,9 @@ body{
   text-align: center;
   font-size: 16px;
   overflow: hidden;
+  /*font-family: 'Anton', sans-serif;*/
+  font-family: 'Abril Fatface', cursive;
+  /*font-family: 'Acme', sans-serif;*/
 }
 #bird{
   /*width: 100px;*/
@@ -88,6 +91,7 @@ body{
   position: absolute;
   opacity: 0;
   margin-left: auto;
+  /*border-radius: 20%;*/
   margin-right: auto;
   left: 0;
   right: 0;
@@ -121,9 +125,9 @@ body{
   width: 75px;
   height: 75px;
   background-color: white;
-  z-index: 7;
+  z-index: 10;
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 0;
   opacity: 0;
   border-radius: 50%;
@@ -144,9 +148,9 @@ body{
   width: 75px;
   height: 75px;
   background-color: black;
-  z-index: 5;
+  z-index: 9;
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 0;
   opacity: 0;
   border-radius: 50%;
@@ -161,25 +165,25 @@ body{
   width: 75px;
   height: 75px;
   background-color: white;
-  z-index: 2;
+  z-index: 8;
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 0;
   opacity: 0;
   border-radius: 50%;
   text-align: center;
 }
-.menu-bar{
+
+.fa-bars{
   position: absolute;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  width: 30px;
-  height: 5px;
-  border-radius: 20%;
-  background-color: black;
+  color: black;
+  top: 30%;
+  /*opacity: 0;*/
 }
 .fa-times{
   position: absolute;
@@ -192,18 +196,8 @@ body{
   top: 30%;
   opacity: 0;
 }
-.menu1{
-  top: 35%;
-}
-.menu2{
-  top: 50%;
-}
-.menu3{
-  top: 65%;
-}
-
 .lorem{
-  top: 300px;
+  top: 320px;
   opacity: 0;
   font-size: 1.3em;
   color: rgba(255,255,255,0.5);
@@ -233,11 +227,16 @@ body{
 
 .bar-div{
   width: 200px;
-  position: relative;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   height: 200px;
+  cursor: pointer;
   /*border: 2px solid red;*/
   top: 130px;
-  left: 200px;
+  left: -570px;
   z-index: 3;
 }
 
@@ -256,7 +255,7 @@ body{
   top: 130px;
   right: 0;
   cursor: pointer;
-    animation-name: spin;
+  animation-name: spin;
   animation-duration: 20s;
   -webkit-animation-timing-function: linear; /* Safari and Chrome */
   animation-timing-function: linear;
@@ -326,4 +325,62 @@ body{
   left: -487px;
   opacity: 0;
 }
+.social-share{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 40px;
+  bottom: 20px;
+  z-index: 2;
+}
+.social-button{
+  display: inline;
+  z-index: 2;
+}
+.social-share-img{
+  position: relative;
+  width: 75px;
+  padding: 10px;
+  opacity: 0;
+  z-index: 2;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.social-share-img:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+}
+.light-ray{
+  position: absolute;
+  width: 180px;
+  margin-left: -123px;
+  z-index: 0;
+  margin-top: -50px;
+  pointer-events: none;
+  bottom: -70px;
+  /*padding: 20px;*/
+  animation-name: spin;
+  animation-duration: 20s;
+  -webkit-animation-timing-function: linear; /* Safari and Chrome */
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+.ray1{
+  margin-left: -130px;
+}
+.ray2{
+  margin-left: -128px;
+}
+.ray3{
+  margin-left: -133px;
+}
+
 
