@@ -175,7 +175,7 @@ $(".graph2Click").mouseleave(function() {
 
 $(".learn-more-background1").mouseover(function() {
   var lorem = $('.lorem');
-  TweenLite.to(lorem, 1, {top:380, ease:Power2.easeOut});
+  TweenLite.to(lorem, 1, {top:350, ease:Power2.easeOut});
   $(".lorem").fadeTo(700, 1);
 
   var hover2 = $('.hover2');
