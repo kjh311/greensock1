@@ -625,6 +625,7 @@ body{
 }
 .lorem1, .lorem2, .lorem3, .lorem4{
   top: 450px;
+  line-height: 1.2;
 }
 
 #animation{
