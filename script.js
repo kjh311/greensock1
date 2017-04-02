@@ -25,19 +25,25 @@ TweenLite.to(socialShareImg, 1.5, {opacity:1, bottom:80, ease:Power2.easeOut, de
 var lightRay = $('.light-ray');
 TweenLite.to(lightRay, 1.5, {bottom:25, ease:Power2.easeOut, delay:2.5});
 
-// var blueCircle = $('.blue-circle');
-// // TweenLite.to(blueCircle, 4, {rotation:360, transformOrigin:"center"});
-// var t56 = new TimelineMax();
-// // t56.to(blueCircle, 2, {height:100, top:180, repeat:-1, yoyo:true})
-// t56.to(blueCircle, 2, {rotation:360, repeat:-1, transformOrigin:"center", ease:"Power0.easeNone"});
-// t56.play();
+var hover1 = $('.hover1');
+TweenLite.to(hover1, 1.5, {opacity:1, ease:Power2.easeOut, delay:1.5});
 
-$(".learn-more-background1").mouseover(function() {
+var hover2 = $('.hover2');
+TweenLite.to(hover2, 1.5, {opacity:1, ease:Power2.easeOut, delay:1.5});
+
+var graphDiv = $('.graph-div');
+TweenLite.to(graphDiv, 1.5, {opacity:1, ease:Power2.easeOut, delay:1.5});
+
+var graph = $('.graph');
+TweenLite.to(graph, 1.5, {opacity:1, ease:Power2.easeOut, delay:1.5});
+
+
+$(".learn-more").mouseover(function() {
   $( ".learn-more-text1" ).css({}).animate({'left' : '-200px'}, 300);  
   $( ".learn-more-text2" ).css({}).animate({'left' : '20px'}, 450);  
 });
 
-$(".learn-more-background1").mouseleave(function() {
+$(".learn-more").mouseleave(function() {
   $( ".learn-more-text1" ).css({}).animate({'left' : '20px'}, 450);  
   $( ".learn-more-text2" ).css({}).animate({'left' : '520px'}, 300);  
 });
@@ -81,7 +87,7 @@ $(".google").mouseleave(function() {
   $('.ray3').fadeTo(400, 0);
 }); 
 
-// BAR GRAPH ANIMATION
+// BAR GRAPH ANIMATION1
 $(".bar-div").mouseover(function() {
   var barText1 = $('.bar-text1');
   TweenLite.to(barText1, 1.2, {top:240, opacity:0.7, ease:Power2.easeOut, delay:0.3});
@@ -101,11 +107,13 @@ $(".bar-div").mouseover(function() {
   var barText3Div = $('.bar-text3-div');
   TweenLite.to(barText3Div, 1.1, {top:270, opacity:0.7, ease:Power2.easeOut, delay:0.7});
 
-  $(".blue-circle").fadeTo(700, 0.4);
+  $('.hover1').fadeTo(400, 0);
+  $(".blue-circle").fadeTo(1000, 0.4);
 }); 
 
 $(".bar-div").mouseleave(function() {
   $(".blue-circle").fadeTo(700, 0);
+  $('.hover1').fadeTo(700, 1);
   
   var barText1 = $('.bar-text1');
   TweenLite.to(barText1, 0.5, {top:210, opacity:0, ease:Power2.easeOut, delay:0.1});
@@ -126,22 +134,73 @@ $(".bar-div").mouseleave(function() {
   TweenLite.to(barText3Div, 0.5, {top:320, opacity:0, ease:Power2.easeOut, delay:0.1});
 }); 
 
-$(".learn-more").mouseover(function() {
+// BAR GRAPH ANIMATION 2
+$(".graph2Click").mouseover(function() {
+
+  var graphBar1 = $('.graph-bar1');
+  TweenLite.to(graphBar1, 1.8, {height:100, ease: Elastic.easeOut.config(1, 0.3), delay:0.3});
+
+  var graphBar2 = $('.graph-bar2');
+  TweenLite.to(graphBar2, 1.8, {height:120, ease: Elastic.easeOut.config(1, 0.3), delay:0.5});
+
+  var graphBar3 = $('.graph-bar3');
+  TweenLite.to(graphBar3, 1.8, {height:80, ease: Elastic.easeOut.config(1, 0.3), delay:0.7});
+
+  var graphBar4 = $('.graph-bar4');
+  TweenLite.to(graphBar4, 1.8, {height:130, ease: Elastic.easeOut.config(1, 0.3), delay:0.8});
+
+  var hover2 = $('.hover2');
+  TweenLite.to(hover2, 0.5, {opacity:0, ease: Power1.easeOut});
+
+}); 
+
+$(".graph2Click").mouseleave(function() {
+
+  var graphBar1 = $('.graph-bar1');
+  TweenLite.to(graphBar1, 0.5, {height:0, ease: Bounce.easeOut, delay:0.2});
+
+  var graphBar2 = $('.graph-bar2');
+  TweenLite.to(graphBar2, 0.5, {height:0, ease: Bounce.easeOut, delay:0.3});
+
+  var graphBar3 = $('.graph-bar3');
+  TweenLite.to(graphBar3, 0.5, {height:0, ease: Bounce.easeOut, delay:0.4});
+
+  var graphBar4 = $('.graph-bar4');
+  TweenLite.to(graphBar4, 0.5, {height:0, ease: Bounce.easeOut, delay:0.5});
+
+  var hover2 = $('.hover2');
+  TweenLite.to(hover2, 1, {opacity:1, ease: Power1.easeOut, delay:0.2});
+
+});
+
+$(".learn-more-background1").mouseover(function() {
   var lorem = $('.lorem');
-  TweenLite.to(lorem, 1, {top:300, ease:Power2.easeOut});
+  TweenLite.to(lorem, 1, {top:380, ease:Power2.easeOut});
   $(".lorem").fadeTo(700, 1);
+
+  var hover2 = $('.hover2');
+  TweenLite.to(hover2, 0.5, {opacity:0, ease: Power1.easeOut});
+
+  var hover1 = $('.hover1');
+  TweenLite.to(hover1, 0.5, {opacity:0, ease: Power1.easeOut});
   
 }); 
 
-$(".learn-more").mouseleave(function() {
+$(".learn-more-background1").mouseleave(function() {
   var lorem = $('.lorem');
   TweenLite.to(lorem, 0.1, {top:320, ease:Power2.easeOut, delay:0.5});
   $(".lorem").fadeTo(500, 0);
+
+  var hover2 = $('.hover2');
+  TweenLite.to(hover2, 0.5, {opacity:1, ease: Power1.easeOut});
+
+  var hover1 = $('.hover1');
+  TweenLite.to(hover1, 0.5, {opacity:1, ease: Power1.easeOut});
 }); 
 
+
+
 $(".white-circle").click(function(){
-
-
 
   $( ".expanding-circle" ).animate({  
    width: "10000px",  
@@ -159,13 +218,13 @@ $(".white-circle").click(function(){
   var whiteLink1 = $('.white-link1');
   TweenLite.to(whiteLink1, 0.5, {left:50, opacity:1, ease:Power2.easeOut, delay:0.5});
 
-    var whiteLink2 = $('.white-link2');
+  var whiteLink2 = $('.white-link2');
   TweenLite.to(whiteLink2, 0.5, {left:70, opacity:1, ease:Power2.easeOut, delay:0.7});
 
-    var whiteLink3 = $('.white-link3');
+  var whiteLink3 = $('.white-link3');
   TweenLite.to(whiteLink3, 0.5, {left:90, opacity:1, ease:Power2.easeOut, delay:0.9});
 
-    var whiteLink4 = $('.white-link4');
+  var whiteLink4 = $('.white-link4');
   TweenLite.to(whiteLink4, 0.5, {left:110, opacity:1, ease:Power2.easeOut, delay:1.1});
 
 $('.white-link-div').css({pointerEvents: "auto"});
@@ -183,16 +242,16 @@ $(".black-circle").click(function(){
       $('.fa-times').fadeTo(1000, 0);
       $('.white-circle').fadeTo(1000, 1);
 
-        var whiteLink1 = $('.white-link1');
+  var whiteLink1 = $('.white-link1');
   TweenLite.to(whiteLink1, 1, {left:0, opacity:0, ease:Power2.easeOut, delay:0});
 
-    var whiteLink2 = $('.white-link2');
+  var whiteLink2 = $('.white-link2');
   TweenLite.to(whiteLink2, 1, {left:20, opacity:0, ease:Power2.easeOut, delay:0});
 
-    var whiteLink3 = $('.white-link3');
+  var whiteLink3 = $('.white-link3');
   TweenLite.to(whiteLink3, 1, {left:40, opacity:0, ease:Power2.easeOut, delay:0});
 
-    var whiteLink4 = $('.white-link4');
+  var whiteLink4 = $('.white-link4');
   TweenLite.to(whiteLink4, 1, {left:60, opacity:0, ease:Power2.easeOut, delay:0});
 
   $('.white-link-div').css({pointerEvents: "none"});
@@ -203,6 +262,9 @@ $(".black-circle").click(function(){
 $(".white-link-div1").mouseover(function() {
   var lorem1 = $('.lorem1');
   TweenLite.to(lorem1, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var yoda = $('.yoda');
+  TweenLite.to(yoda, 1, {right:200, opacity:1, ease:Power2.easeOut});
 
   var redLink1 = $('.red-link1');
   TweenLite.to(redLink1, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
@@ -216,6 +278,9 @@ $(".white-link-div1").mouseleave(function() {
   var lorem1 = $('.lorem1');
   TweenLite.to(lorem1, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
 
+  var yoda = $('.yoda');
+  TweenLite.to(yoda, 1, {right:150, opacity:0, ease:Power2.easeOut});
+
   var redLink1 = $('.red-link1');
   TweenLite.to(redLink1, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
 
@@ -226,6 +291,9 @@ $(".white-link-div1").mouseleave(function() {
 $(".white-link-div2").mouseover(function() {
   var lorem2 = $('.lorem2');
   TweenLite.to(lorem2, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var bacon = $('.bacon-pic');
+  TweenLite.to(bacon, 1, {right:200, opacity:1, ease:Power2.easeOut});
 
   var redLink2 = $('.red-link2');
   TweenLite.to(redLink2, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
@@ -238,6 +306,9 @@ $(".white-link-div2").mouseleave(function() {
   var lorem2 = $('.lorem2');
   TweenLite.to(lorem2, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
 
+  var bacon = $('.bacon-pic');
+  TweenLite.to(bacon, 1, {right:150, opacity:0, ease:Power2.easeOut});
+
   var redLink2 = $('.red-link2');
   TweenLite.to(redLink2, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
 
@@ -248,6 +319,9 @@ $(".white-link-div2").mouseleave(function() {
 $(".white-link-div3").mouseover(function() {
   var lorem3 = $('.lorem3');
   TweenLite.to(lorem3, 1, {right:50, opacity:1, ease:Power2.easeOut});
+
+  var hipster = $('.hipster');
+  TweenLite.to(hipster, 1, {right:200, opacity:1, ease:Power2.easeOut});
 
   var redLink3 = $('.red-link3');
   TweenLite.to(redLink3, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
@@ -260,6 +334,9 @@ $(".white-link-div3").mouseleave(function() {
   var lorem3 = $('.lorem3');
   TweenLite.to(lorem3, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
 
+  var hipster = $('.hipster');
+  TweenLite.to(hipster, 1, {right:150, opacity:0, ease:Power2.easeOut});
+
   var redLink3 = $('.red-link3');
   TweenLite.to(redLink3, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});
 
@@ -271,6 +348,9 @@ $(".white-link-div4").mouseover(function() {
   var lorem4 = $('.lorem4');
   TweenLite.to(lorem4, 1, {right:50, opacity:1, ease:Power2.easeOut});
 
+  var samuel = $('.samuel');
+  TweenLite.to(samuel, 1, {right:200, opacity:1, ease:Power2.easeOut});
+
   var redLink4 = $('.red-link4');
   TweenLite.to(redLink4, 0.5, {top:0, opacity:1, rotationX:0, ease:Power2.easeOut});
 
@@ -281,6 +361,9 @@ $(".white-link-div4").mouseover(function() {
 $(".white-link-div4").mouseleave(function() {
   var lorem4 = $('.lorem4');
   TweenLite.to(lorem4, 0.5, {right:0, opacity:0, ease:Power2.easeOut});
+
+  var samuel = $('.samuel');
+  TweenLite.to(samuel, 1, {right:150, opacity:0, ease:Power2.easeOut});
 
   var redLink4 = $('.red-link4');
   TweenLite.to(redLink4, 0.5, {top:-30, opacity:0, rotationX:90, ease:Power2.easeOut});

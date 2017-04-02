@@ -13,7 +13,10 @@ body{
   /*font-family: 'Anton', sans-serif;*/
   font-family: 'Abril Fatface', cursive;
   /*font-family: 'Acme', sans-serif;*/
-
+  -webkit-user-select: none; 
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;  
 }
 #bird{
   /*width: 100px;*/
@@ -128,6 +131,28 @@ body{
   height: 80px;
   left: -590px;
   top: 200px;
+}
+.hover1{
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  right: 560px;
+  left: 0;
+  font-size: 1.5em;
+  top: 330px;
+  opacity: 0;
+  color: rgba(255,255,255, 0.25);
+}
+.hover2{
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0px;
+  left: 0;
+  font-size: 1.5em;
+  top: 160px;
+  /*opacity: 0;*/
+  color: rgba(255,255,255, 0.25);
 }
 .white-circle{
   width: 75px;
@@ -401,7 +426,7 @@ body{
   position: absolute;
   /*border: 2px solid red;*/
   padding: 10px;
-  
+  text-decoration: underline;
   /*display: none;*/
 }
 .white-links{
@@ -443,28 +468,107 @@ body{
   pointer-events: none;
 }
 .lorem1{
-  top: 100px;
-  right: 0px;
-  opacity: 0;
-}
-.lorem2{
-  top: 150px;
-  right: 0px;
-  opacity: 0;
-}
-.lorem3{
-  top: 200px;
-  right: 0px;
-  opacity: 0;
-}
-.lorem4{
   top: 300px;
   right: 0px;
   opacity: 0;
 }
-
+.lorem2{
+  top: 325px;
+  right: 0px;
+  opacity: 0;
+}
+.lorem3{
+  top: 350px;
+  right: 0px;
+  opacity: 0;
+}
+.lorem4{
+  top: 400px;
+  right: 0px;
+  opacity: 0;
+}
+.lorem-pic{
+  pointer-events: none;
+  width: 200px;
+  position: absolute;
+  right: 150px;
+  top: 100px;
+  opacity: 0;
+  z-index: 11;
+}
+.graph-div{
+  position: absolute;
+  /*border: 2px solid rgba(255,255,255,0.4);*/
+  width: 250px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 570px;
+  top: 170px;
+  background-color: rgba(255,255,255,0.2);
+  opacity: 0;
+}
+.graph{
+  pointer-events: none;
+  width: 248px;
+  z-index: 2;
+  height: 148px;
+  opacity: 0;
+}
+.graph-bar{
+  pointer-events: none;
+  position: absolute;
+  /*border: 2px solid red;*/
+}
+.graph-bar1{
+  width: 45px;
+  height: 0px;
+  bottom: 10px;
+  left: 37px;
+  background-color: #ffff00;
+  /*opacity: 0;*/
+}
+.graph-bar2{
+  width: 45px;
+  height: 0px;
+  bottom: 10px;
+  left: 80px;
+  background-color: #ff9933;
+  /*opacity: 0;*/
+}
+.graph-bar3{
+  width: 45px;
+  height: 0px;
+  bottom: 10px;
+  left: 124px;
+  background-color: #ff3300;
+  /*opacity: 0;*/
+}
+.graph-bar4{
+  width: 45px;
+  height: 0px;
+  bottom: 10px;
+  left: 168px;
+  background-color: #cc00ff;
+  /*opacity: 0;*/
+}
+.graph2Click{
+  position: absolute;
+  /*border: 2px solid red;*/
+  width: 270px;
+  height: 170px;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 570px;
+  top: 160px;
+  z-index: 3;
+  cursor: pointer;
+}
 .red-link{
   color: red;
+  text-decoration: underline;
   font-size: 2em;
   cursor: pointer;
   position: absolute;
@@ -530,27 +634,89 @@ body{
 }
 
 
-
-
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
 .white-link-div{
-  width: 300px;
+  width: 500px;
   height: 50px;
 }
 .lorem{
   width: 300px;
   line-height: 1.2;
-  font-size: 1em;
+  font-size: 1em; 
   /*border: 2px solid green;*/
 }
-.blue-circle, .bar, .bar-info{
-  display: none;
+.white-link-div1{
+  top:50px;
 }
+.white-link-div2{
+  top:150px;
+}
+.white-link-div3{
+  top:250px;
+}
+.white-link-div4{
+  top:350px;
+}
+.lorem1, .lorem2, .lorem3, .lorem4{
+  top: 450px;
+}
+
 #animation{
   font-size: 2em;
 }
+.red-link, .white-link{
+  font-size: 1em;
 }
+}
+
+
+@media only screen and (max-width: 750px) {
+.blue-circle, .bar, .bar-info, .hover1, .graph, .graph-div, .hover2{
+  display: none;
+}
+.lorem-pic{
+  display: none;
+}
+.footer-text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.white-link-div{
+  width: 360px;
+  left: 0px;
+}
+.red-link, .white-link{
+  font-size: 0.7em;
+}
+.white-link-div1{
+  top:100px;
+}
+.white-link-div2{
+  top:160px;
+}
+.white-link-div3{
+  top:220px;
+}
+.white-link-div4{
+  top:280px;
+}
+.lorem-text{
+  width: 260px;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+.lorem1, .lorem2, .lorem3, .lorem4{
+  top: 330px;
+}
+
+.social-share{
+  bottom: 0px;
+}
+}
+
+
+
+
 
 
 
